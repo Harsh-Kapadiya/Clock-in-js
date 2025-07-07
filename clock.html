@@ -1,10 +1,14 @@
-<!DOCTYPE html>
 <!-- creating a simple cock using html css & js -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Clock</title>
+    
+</head>
+<body>
+    <div class="clock" id="clock"></div>
     <style>
         body {
             display: flex;
@@ -12,17 +16,37 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f0f0f0;
+            background-image: url("futuristic-synthwave-car-driving-night_961875-214676.avif");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            /* background-color:cadetblue; */
+            /* background-image: linear-gradient(to bottom right,#282727, rgb(57, 119, 121), rgb(167, 199, 199), white); */
             font-family: Arial, sans-serif;
         }
         .clock {
+            border-radius: 10px;
+            padding: 20px 100px;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            font-weight: bold;
+            font-family: digital-7, sans-serif, digital-7-mono;
             font-size: 5em;
-            color: #333;
+        }
+        .clock:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            cursor: pointer;
+            padding: 25px 125px;
+            font-size: 6em;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8);
+            transition-property: all 2s ease-in-out;
         }
     </style>
-</head>
-<body>
-    <div class="clock" id="clock"></div>
     <script>
         function updateClock() {
             const clockElement = document.getElementById('clock');
