@@ -21,7 +21,4 @@ The design features a **futuristic blurred glass effect** with a cool background
 - **CSS3** (Flexbox, Backdrop Filter, Transitions)  
 - **JavaScript (ES6)**
 
----
-
-## 📂 Project Structure
-
+--
